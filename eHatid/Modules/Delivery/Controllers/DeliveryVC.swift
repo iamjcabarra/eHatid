@@ -54,7 +54,7 @@ public final class DeliveryVC: UIViewController {
     // MARK: - Stored Properties
     private var viewModel: DeliveryViewModel
     private var offset: Int = 1
-    private var limit: Int = 5
+    private let limit: Int = 10
     private var isLoadingMore: Bool = false
     private var _fetchedResultsController: NSFetchedResultsController<NSManagedObject>?
 

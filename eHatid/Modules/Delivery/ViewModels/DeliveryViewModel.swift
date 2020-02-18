@@ -81,6 +81,8 @@ extension DeliveryViewModel {
             var order: Int64 = self.getStartOrder()
             
             for delivery in deliveries {
+                delivery.id = "\(delivery.id)\(NSUUID().uuidString)"
+                
                 let localDelivery: LocalDelivery = self.database.retrieveEntity(
                     name: Constants.Entity.delivery,
                     fromContext: context,

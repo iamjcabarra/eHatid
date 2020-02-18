@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LocalDelivery" representedClassName="LocalDelivery" syncable="YES" codeGenerationType="class">
+        <attribute name="deliveryFee" optional="YES" attributeType="String"/>
+        <attribute name="goodsPicture" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isFavorite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pickupTime" optional="YES" attributeType="String"/>
+        <attribute name="remarks" optional="YES" attributeType="String"/>
+        <attribute name="surcharge" optional="YES" attributeType="String"/>
+        <attribute name="totalFee" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <relationship name="route" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocalDeliveryRoute" inverseName="delivery" inverseEntity="LocalDeliveryRoute"/>
+        <relationship name="sender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocalDeliverySender" inverseName="delivery" inverseEntity="LocalDeliverySender"/>
+    </entity>
+    <entity name="LocalDeliveryRoute" representedClassName="LocalDeliveryRoute" syncable="YES" codeGenerationType="class">
+        <attribute name="end" optional="YES" attributeType="String"/>
+        <attribute name="start" optional="YES" attributeType="String"/>
+        <relationship name="delivery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocalDelivery" inverseName="route" inverseEntity="LocalDelivery"/>
+    </entity>
+    <entity name="LocalDeliverySender" representedClassName="LocalDeliverySender" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <relationship name="delivery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocalDelivery" inverseName="sender" inverseEntity="LocalDelivery"/>
+    </entity>
+    <elements>
+        <element name="LocalDelivery" positionX="-63" positionY="-18" width="128" height="208"/>
+        <element name="LocalDeliveryRoute" positionX="-54" positionY="36" width="128" height="88"/>
+        <element name="LocalDeliverySender" positionX="-36" positionY="45" width="128" height="103"/>
+    </elements>
+</model>

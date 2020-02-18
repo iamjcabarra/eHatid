@@ -1,0 +1,1481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23C8366A8576FB7CE2D1BD2F /* Pods_eHatid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2C0C1E425B328B4FE0C928 /* Pods_eHatid.framework */; };
+		51A72F5555E445ED92D762F5 /* Pods_eHatidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085550DD67CBEF9844928A0A /* Pods_eHatidTests.framework */; };
+		A8204EF423F3EFCE0026BC2E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8204EF323F3EFCE0026BC2E /* APIService.swift */; };
+		A8204F0323F3FFCD0026BC2E /* ProximaNovaRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8204F0223F3FFCD0026BC2E /* ProximaNovaRegular.otf */; };
+		A8204F0523F3FFF20026BC2E /* ProximaNovaBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8204F0423F3FFF20026BC2E /* ProximaNovaBold.otf */; };
+		A8204F0723F4030E0026BC2E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8204F0623F4030E0026BC2E /* main.swift */; };
+		A8204F0E23F407250026BC2E /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8204F0C23F407250026BC2E /* TestAppDelegate.swift */; };
+		A8204F1123F410730026BC2E /* DeliveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8204F1023F410730026BC2E /* DeliveryVC.swift */; };
+		A8204F1323F411CD0026BC2E /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8204F1223F411CD0026BC2E /* RootRouter.swift */; };
+		A82BB09B23F6437A00F68A7F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A82BB09D23F6437A00F68A7F /* Localizable.strings */; };
+		A82BB0A023F6439000F68A7F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A82BB0A223F6439000F68A7F /* Localizable.strings */; };
+		A82BB0A423F6442400F68A7F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82BB0A323F6442400F68A7F /* CoreDataStack.swift */; };
+		A8323FE223FBAA4600D3A865 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8323FE023FBAA4600D3A865 /* DataModel.xcdatamodeld */; };
+		A8323FE723FBAE2900D3A865 /* DeliveriesFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = A8323FE623FBAE2900D3A865 /* DeliveriesFailure.json */; };
+		A8323FEB23FBB46100D3A865 /* DeliveriesSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = A8FA6DDB23FBA72D00D00C66 /* DeliveriesSuccess.json */; };
+		A8323FEC23FBB46400D3A865 /* DeliveriesFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = A8323FE623FBAE2900D3A865 /* DeliveriesFailure.json */; };
+		A8323FEE23FBB5AC00D3A865 /* DeliveryVCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8323FED23FBB5AC00D3A865 /* DeliveryVCTest.swift */; };
+		A83D8DC623F5204800D37009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83D8DC523F5204800D37009 /* LaunchScreen.storyboard */; };
+		A86A45C823F534BF00FAFA78 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A45C723F534BF00FAFA78 /* Configuration.swift */; };
+		A86A45CB23F541AE00FAFA78 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A45CA23F541AE00FAFA78 /* Environment.swift */; };
+		A885F5CE23F3E4EC00B63CA8 /* MainAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A885F5CD23F3E4EC00B63CA8 /* MainAppDelegate.swift */; };
+		A885F5D723F3E4ED00B63CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A885F5D623F3E4ED00B63CA8 /* Assets.xcassets */; };
+		A8B4FD6723F673B70021994E /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4FD6623F673B70021994E /* Delivery.swift */; };
+		A8B4FD6923F675950021994E /* DeliveryRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4FD6823F675950021994E /* DeliveryRoute.swift */; };
+		A8B4FD6B23F6764D0021994E /* DeliverySender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4FD6A23F6764D0021994E /* DeliverySender.swift */; };
+		A8B4FD6D23F67A620021994E /* DeliveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4FD6C23F67A620021994E /* DeliveryViewModel.swift */; };
+		A8B4FD7023F67B630021994E /* DeliveryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4FD6F23F67B630021994E /* DeliveryRequest.swift */; };
+		A8B4FD7723F6A2280021994E /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4FD7623F6A2280021994E /* ThemeManager.swift */; };
+		A8B4FD7923F6A24D0021994E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4FD7823F6A24D0021994E /* UIColor+Extension.swift */; };
+		A8B4FD7B23F6AAAC0021994E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4FD7A23F6AAAC0021994E /* Theme.swift */; };
+		A8B4FD7E23F6AD570021994E /* DeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4FD7D23F6AD570021994E /* DeliveryView.swift */; };
+		A8E1FEAD23F6B1640097BAAF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E1FEAC23F6B1640097BAAF /* UIView+Extension.swift */; };
+		A8E1FEAF23F6B5200097BAAF /* DeliveryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E1FEAE23F6B5200097BAAF /* DeliveryCell.swift */; };
+		A8FA6DD023FB9F2B00D00C66 /* DeliveryViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA6DCF23FB9F2B00D00C66 /* DeliveryViewModelTest.swift */; };
+		A8FA6DD223FBA04900D00C66 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8204F0C23F407250026BC2E /* TestAppDelegate.swift */; };
+		A8FA6DD723FBA61700D00C66 /* FakeMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA6DD623FBA61700D00C66 /* FakeMoyaProvider.swift */; };
+		A8FA6DD923FBA66C00D00C66 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FA6DD823FBA66C00D00C66 /* Mock.swift */; };
+		A8FA6DDC23FBA72D00D00C66 /* DeliveriesSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = A8FA6DDB23FBA72D00D00C66 /* DeliveriesSuccess.json */; };
+		EF34A55023FA38A70019D7C9 /* DeliveryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF34A54F23FA38A70019D7C9 /* DeliveryDetailsView.swift */; };
+		EF34A55223FA3F650019D7C9 /* DeliveryDetailsViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF34A55123FA3F650019D7C9 /* DeliveryDetailsViewVC.swift */; };
+		EF3C92C223F800D80089B7C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C92C123F800D80089B7C8 /* Constants.swift */; };
+		EF3C92C423F8045A0089B7C8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C92C323F8045A0089B7C8 /* Globals.swift */; };
+		EF3C92C623F8124F0089B7C8 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C92C523F8124F0089B7C8 /* UILabel+Extension.swift */; };
+		EFF05AE623F8DB1300393634 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF05AE523F8DB1300393634 /* String+Extension.swift */; };
+		EFF05AE823F8DF1800393634 /* NSDecimalNumber+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF05AE723F8DF1800393634 /* NSDecimalNumber+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A885F5E123F3E4EE00B63CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A885F5C223F3E4EC00B63CA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A885F5C923F3E4EC00B63CA8;
+			remoteInfo = eHatid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		085550DD67CBEF9844928A0A /* Pods_eHatidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eHatidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2C0C1E425B328B4FE0C928 /* Pods_eHatid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eHatid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C70E9361A3EEEB92EF21F17 /* Pods-eHatid.production release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatid.production release.xcconfig"; path = "Target Support Files/Pods-eHatid/Pods-eHatid.production release.xcconfig"; sourceTree = "<group>"; };
+		16E38CEF82E7CF9FCF424A04 /* Pods-eHatidTests.staging debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatidTests.staging debug.xcconfig"; path = "Target Support Files/Pods-eHatidTests/Pods-eHatidTests.staging debug.xcconfig"; sourceTree = "<group>"; };
+		2DE8821E8E57F5B933EFC382 /* Pods-eHatidTests.production release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatidTests.production release.xcconfig"; path = "Target Support Files/Pods-eHatidTests/Pods-eHatidTests.production release.xcconfig"; sourceTree = "<group>"; };
+		43647E1362E4E27F30985C8E /* Pods-eHatidTests.production debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatidTests.production debug.xcconfig"; path = "Target Support Files/Pods-eHatidTests/Pods-eHatidTests.production debug.xcconfig"; sourceTree = "<group>"; };
+		643C5A1BDF54E0A6FC9494D0 /* Pods-eHatid.development debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatid.development debug.xcconfig"; path = "Target Support Files/Pods-eHatid/Pods-eHatid.development debug.xcconfig"; sourceTree = "<group>"; };
+		90B3A21967CFE8E3B4E2B176 /* Pods-eHatid.production debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatid.production debug.xcconfig"; path = "Target Support Files/Pods-eHatid/Pods-eHatid.production debug.xcconfig"; sourceTree = "<group>"; };
+		A8204EF323F3EFCE0026BC2E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A8204F0223F3FFCD0026BC2E /* ProximaNovaRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaRegular.otf; sourceTree = "<group>"; };
+		A8204F0423F3FFF20026BC2E /* ProximaNovaBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaBold.otf; sourceTree = "<group>"; };
+		A8204F0623F4030E0026BC2E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A8204F0C23F407250026BC2E /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		A8204F0F23F407380026BC2E /* TestBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBridgingHeader.h; sourceTree = "<group>"; };
+		A8204F1023F410730026BC2E /* DeliveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryVC.swift; sourceTree = "<group>"; };
+		A8204F1223F411CD0026BC2E /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		A82BB09C23F6437A00F68A7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A82BB0A123F6439000F68A7F /* fil-PH */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fil-PH"; path = "fil-PH.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A82BB0A323F6442400F68A7F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A8323FE123FBAA4600D3A865 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		A8323FE623FBAE2900D3A865 /* DeliveriesFailure.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DeliveriesFailure.json; sourceTree = "<group>"; };
+		A8323FED23FBB5AC00D3A865 /* DeliveryVCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryVCTest.swift; sourceTree = "<group>"; };
+		A83D8DC523F5204800D37009 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A86A45C723F534BF00FAFA78 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A86A45CA23F541AE00FAFA78 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		A885F5CA23F3E4EC00B63CA8 /* eHatid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eHatid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A885F5CD23F3E4EC00B63CA8 /* MainAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppDelegate.swift; sourceTree = "<group>"; };
+		A885F5D623F3E4ED00B63CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A885F5DB23F3E4ED00B63CA8 /* MainInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MainInfo.plist; sourceTree = "<group>"; };
+		A885F5E023F3E4EE00B63CA8 /* eHatidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eHatidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A885F5E623F3E4EE00B63CA8 /* TestInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestInfo.plist; sourceTree = "<group>"; };
+		A8B4FD6623F673B70021994E /* Delivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
+		A8B4FD6823F675950021994E /* DeliveryRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryRoute.swift; sourceTree = "<group>"; };
+		A8B4FD6A23F6764D0021994E /* DeliverySender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverySender.swift; sourceTree = "<group>"; };
+		A8B4FD6C23F67A620021994E /* DeliveryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewModel.swift; sourceTree = "<group>"; };
+		A8B4FD6F23F67B630021994E /* DeliveryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryRequest.swift; sourceTree = "<group>"; };
+		A8B4FD7623F6A2280021994E /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		A8B4FD7823F6A24D0021994E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A8B4FD7A23F6AAAC0021994E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A8B4FD7D23F6AD570021994E /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
+		A8E1FEAC23F6B1640097BAAF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A8E1FEAE23F6B5200097BAAF /* DeliveryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryCell.swift; sourceTree = "<group>"; };
+		A8FA6DCF23FB9F2B00D00C66 /* DeliveryViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewModelTest.swift; sourceTree = "<group>"; };
+		A8FA6DD623FBA61700D00C66 /* FakeMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeMoyaProvider.swift; sourceTree = "<group>"; };
+		A8FA6DD823FBA66C00D00C66 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		A8FA6DDB23FBA72D00D00C66 /* DeliveriesSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DeliveriesSuccess.json; sourceTree = "<group>"; };
+		B363CC9B97BD1DA28BEC84DD /* Pods-eHatid.development release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatid.development release.xcconfig"; path = "Target Support Files/Pods-eHatid/Pods-eHatid.development release.xcconfig"; sourceTree = "<group>"; };
+		B4C928DEAB2CB9A0F35F8CAF /* Pods-eHatidTests.development debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatidTests.development debug.xcconfig"; path = "Target Support Files/Pods-eHatidTests/Pods-eHatidTests.development debug.xcconfig"; sourceTree = "<group>"; };
+		B912821C1A53D319065B26F1 /* Pods-eHatidTests.staging release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatidTests.staging release.xcconfig"; path = "Target Support Files/Pods-eHatidTests/Pods-eHatidTests.staging release.xcconfig"; sourceTree = "<group>"; };
+		DBF23357EA6A00F6B931DAAA /* Pods-eHatid.staging release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatid.staging release.xcconfig"; path = "Target Support Files/Pods-eHatid/Pods-eHatid.staging release.xcconfig"; sourceTree = "<group>"; };
+		E43092603646A43A9ADD332D /* Pods-eHatid.staging debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatid.staging debug.xcconfig"; path = "Target Support Files/Pods-eHatid/Pods-eHatid.staging debug.xcconfig"; sourceTree = "<group>"; };
+		EF34A54F23FA38A70019D7C9 /* DeliveryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsView.swift; sourceTree = "<group>"; };
+		EF34A55123FA3F650019D7C9 /* DeliveryDetailsViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsViewVC.swift; sourceTree = "<group>"; };
+		EF3C92C123F800D80089B7C8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF3C92C323F8045A0089B7C8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		EF3C92C523F8124F0089B7C8 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		EFF05AE523F8DB1300393634 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EFF05AE723F8DF1800393634 /* NSDecimalNumber+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+Extension.swift"; sourceTree = "<group>"; };
+		F34027FB8C7076C7D4C7D07D /* Pods-eHatidTests.development release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHatidTests.development release.xcconfig"; path = "Target Support Files/Pods-eHatidTests/Pods-eHatidTests.development release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A885F5C723F3E4EC00B63CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C8366A8576FB7CE2D1BD2F /* Pods_eHatid.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A885F5DD23F3E4EE00B63CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51A72F5555E445ED92D762F5 /* Pods_eHatidTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E32607798FCD1B53FF036BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A2C0C1E425B328B4FE0C928 /* Pods_eHatid.framework */,
+				085550DD67CBEF9844928A0A /* Pods_eHatidTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8204EF223F3EF960026BC2E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A8B4FD6423F673900021994E /* Services */,
+				A8B4FD6E23F67B330021994E /* Requests */,
+				A8B4FD6523F6739B0021994E /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A8204EF723F3F7360026BC2E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A8204F1223F411CD0026BC2E /* RootRouter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A8204EFA23F3FE270026BC2E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A885F5D623F3E4ED00B63CA8 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A8204EFB23F3FE2E0026BC2E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A8204F0223F3FFCD0026BC2E /* ProximaNovaRegular.otf */,
+				A8204F0423F3FFF20026BC2E /* ProximaNovaBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A8204EFC23F3FE340026BC2E /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				A82BB09D23F6437A00F68A7F /* Localizable.strings */,
+				A82BB0A223F6439000F68A7F /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		A8204EFE23F3FE800026BC2E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8204EFF23F3FE8F0026BC2E /* Extensions */,
+				A8204EF723F3F7360026BC2E /* Utilities */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8204EFF23F3FE8F0026BC2E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8B4FD7823F6A24D0021994E /* UIColor+Extension.swift */,
+				A8E1FEAC23F6B1640097BAAF /* UIView+Extension.swift */,
+				EF3C92C523F8124F0089B7C8 /* UILabel+Extension.swift */,
+				EFF05AE523F8DB1300393634 /* String+Extension.swift */,
+				EFF05AE723F8DF1800393634 /* NSDecimalNumber+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8204F0123F3FEAA0026BC2E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A83D8DC423F51C1500D37009 /* Launch */,
+				A83D8DC323F51C0A00D37009 /* Delivery */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A83D8DC323F51C0A00D37009 /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				A8B4FD7C23F6AD3E0021994E /* Views */,
+				A8B4FD7323F69DE10021994E /* ViewModels */,
+				A8B4FD7223F69DD50021994E /* Controllers */,
+			);
+			path = Delivery;
+			sourceTree = "<group>";
+		};
+		A83D8DC423F51C1500D37009 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				A83D8DC523F5204800D37009 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		A885F5C123F3E4EC00B63CA8 = {
+			isa = PBXGroup;
+			children = (
+				A885F5CC23F3E4EC00B63CA8 /* eHatid */,
+				A885F5E323F3E4EE00B63CA8 /* eHatidTests */,
+				A885F5CB23F3E4EC00B63CA8 /* Products */,
+				B00C1420F3D1217CCE9BA927 /* Pods */,
+				3E32607798FCD1B53FF036BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A885F5CB23F3E4EC00B63CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A885F5CA23F3E4EC00B63CA8 /* eHatid.app */,
+				A885F5E023F3E4EE00B63CA8 /* eHatidTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A885F5CC23F3E4EC00B63CA8 /* eHatid */ = {
+			isa = PBXGroup;
+			children = (
+				A885F5EF23F3E50500B63CA8 /* Primaries */,
+				A8B4FD7123F680770021994E /* Configuration */,
+				A8204EF223F3EF960026BC2E /* Network */,
+				A8B4FD6323F671360021994E /* Database */,
+				A8204F0123F3FEAA0026BC2E /* Modules */,
+				A885F5F123F3E63300B63CA8 /* Resources */,
+				A8204EFE23F3FE800026BC2E /* Helpers */,
+			);
+			path = eHatid;
+			sourceTree = "<group>";
+		};
+		A885F5E323F3E4EE00B63CA8 /* eHatidTests */ = {
+			isa = PBXGroup;
+			children = (
+				A885F5F023F3E56400B63CA8 /* Primaries */,
+				A8FA6DD523FBA60600D00C66 /* Utilities */,
+				A8FA6DDA23FBA71100D00C66 /* Resources */,
+				EF34A55323FA5F870019D7C9 /* ViewModels */,
+				EF34A55423FA5F9A0019D7C9 /* Controllers */,
+			);
+			path = eHatidTests;
+			sourceTree = "<group>";
+		};
+		A885F5EF23F3E50500B63CA8 /* Primaries */ = {
+			isa = PBXGroup;
+			children = (
+				A8204F0623F4030E0026BC2E /* main.swift */,
+				A885F5CD23F3E4EC00B63CA8 /* MainAppDelegate.swift */,
+				A885F5DB23F3E4ED00B63CA8 /* MainInfo.plist */,
+			);
+			path = Primaries;
+			sourceTree = "<group>";
+		};
+		A885F5F023F3E56400B63CA8 /* Primaries */ = {
+			isa = PBXGroup;
+			children = (
+				A8204F0C23F407250026BC2E /* TestAppDelegate.swift */,
+				A885F5E623F3E4EE00B63CA8 /* TestInfo.plist */,
+				A8204F0F23F407380026BC2E /* TestBridgingHeader.h */,
+			);
+			path = Primaries;
+			sourceTree = "<group>";
+		};
+		A885F5F123F3E63300B63CA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8204EFB23F3FE2E0026BC2E /* Fonts */,
+				A8204EFC23F3FE340026BC2E /* Localizations */,
+				A8204EFA23F3FE270026BC2E /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8B4FD6323F671360021994E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A8323FE023FBAA4600D3A865 /* DataModel.xcdatamodeld */,
+				A82BB0A323F6442400F68A7F /* CoreDataStack.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A8B4FD6423F673900021994E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A8204EF323F3EFCE0026BC2E /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A8B4FD6523F6739B0021994E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8B4FD6823F675950021994E /* DeliveryRoute.swift */,
+				A8B4FD6A23F6764D0021994E /* DeliverySender.swift */,
+				A8B4FD6623F673B70021994E /* Delivery.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A8B4FD6E23F67B330021994E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A8B4FD6F23F67B630021994E /* DeliveryRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		A8B4FD7123F680770021994E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EF3C92C123F800D80089B7C8 /* Constants.swift */,
+				EF3C92C323F8045A0089B7C8 /* Globals.swift */,
+				A86A45C723F534BF00FAFA78 /* Configuration.swift */,
+				A86A45CA23F541AE00FAFA78 /* Environment.swift */,
+				A8B4FD7A23F6AAAC0021994E /* Theme.swift */,
+				A8B4FD7623F6A2280021994E /* ThemeManager.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A8B4FD7223F69DD50021994E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8204F1023F410730026BC2E /* DeliveryVC.swift */,
+				EF34A55123FA3F650019D7C9 /* DeliveryDetailsViewVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A8B4FD7323F69DE10021994E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A8B4FD6C23F67A620021994E /* DeliveryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A8B4FD7C23F6AD3E0021994E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8B4FD7D23F6AD570021994E /* DeliveryView.swift */,
+				A8E1FEAE23F6B5200097BAAF /* DeliveryCell.swift */,
+				EF34A54F23FA38A70019D7C9 /* DeliveryDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8FA6DD523FBA60600D00C66 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A8FA6DD623FBA61700D00C66 /* FakeMoyaProvider.swift */,
+				A8FA6DD823FBA66C00D00C66 /* Mock.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A8FA6DDA23FBA71100D00C66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8FA6DDB23FBA72D00D00C66 /* DeliveriesSuccess.json */,
+				A8323FE623FBAE2900D3A865 /* DeliveriesFailure.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B00C1420F3D1217CCE9BA927 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				643C5A1BDF54E0A6FC9494D0 /* Pods-eHatid.development debug.xcconfig */,
+				90B3A21967CFE8E3B4E2B176 /* Pods-eHatid.production debug.xcconfig */,
+				E43092603646A43A9ADD332D /* Pods-eHatid.staging debug.xcconfig */,
+				B363CC9B97BD1DA28BEC84DD /* Pods-eHatid.development release.xcconfig */,
+				0C70E9361A3EEEB92EF21F17 /* Pods-eHatid.production release.xcconfig */,
+				DBF23357EA6A00F6B931DAAA /* Pods-eHatid.staging release.xcconfig */,
+				B4C928DEAB2CB9A0F35F8CAF /* Pods-eHatidTests.development debug.xcconfig */,
+				43647E1362E4E27F30985C8E /* Pods-eHatidTests.production debug.xcconfig */,
+				16E38CEF82E7CF9FCF424A04 /* Pods-eHatidTests.staging debug.xcconfig */,
+				F34027FB8C7076C7D4C7D07D /* Pods-eHatidTests.development release.xcconfig */,
+				2DE8821E8E57F5B933EFC382 /* Pods-eHatidTests.production release.xcconfig */,
+				B912821C1A53D319065B26F1 /* Pods-eHatidTests.staging release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF34A55323FA5F870019D7C9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A8FA6DCF23FB9F2B00D00C66 /* DeliveryViewModelTest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EF34A55423FA5F9A0019D7C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8323FED23FBB5AC00D3A865 /* DeliveryVCTest.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A885F5C923F3E4EC00B63CA8 /* eHatid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A885F5E923F3E4EE00B63CA8 /* Build configuration list for PBXNativeTarget "eHatid" */;
+			buildPhases = (
+				9C16836DFDF0861B9CC3BE26 /* [CP] Check Pods Manifest.lock */,
+				A885F5C623F3E4EC00B63CA8 /* Sources */,
+				A885F5C723F3E4EC00B63CA8 /* Frameworks */,
+				A885F5C823F3E4EC00B63CA8 /* Resources */,
+				A8B4FD6223F65AA90021994E /* ShellScript */,
+				450AA83078E9E3012DE9DC4E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eHatid;
+			productName = eHatid;
+			productReference = A885F5CA23F3E4EC00B63CA8 /* eHatid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A885F5DF23F3E4EE00B63CA8 /* eHatidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A885F5EC23F3E4EE00B63CA8 /* Build configuration list for PBXNativeTarget "eHatidTests" */;
+			buildPhases = (
+				5553455C585289D391227FC8 /* [CP] Check Pods Manifest.lock */,
+				A885F5DC23F3E4EE00B63CA8 /* Sources */,
+				A885F5DD23F3E4EE00B63CA8 /* Frameworks */,
+				A885F5DE23F3E4EE00B63CA8 /* Resources */,
+				97CF04600A66624A860A6267 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A885F5E223F3E4EE00B63CA8 /* PBXTargetDependency */,
+			);
+			name = eHatidTests;
+			productName = eHatidTests;
+			productReference = A885F5E023F3E4EE00B63CA8 /* eHatidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A885F5C223F3E4EC00B63CA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = eXzeptional;
+				TargetAttributes = {
+					A885F5C923F3E4EC00B63CA8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A885F5DF23F3E4EE00B63CA8 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+						TestTargetID = A885F5C923F3E4EC00B63CA8;
+					};
+				};
+			};
+			buildConfigurationList = A885F5C523F3E4EC00B63CA8 /* Build configuration list for PBXProject "eHatid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"fil-PH",
+				Base,
+			);
+			mainGroup = A885F5C123F3E4EC00B63CA8;
+			productRefGroup = A885F5CB23F3E4EC00B63CA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A885F5C923F3E4EC00B63CA8 /* eHatid */,
+				A885F5DF23F3E4EE00B63CA8 /* eHatidTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A885F5C823F3E4EC00B63CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A82BB09B23F6437A00F68A7F /* Localizable.strings in Resources */,
+				A82BB0A023F6439000F68A7F /* Localizable.strings in Resources */,
+				A8323FEC23FBB46400D3A865 /* DeliveriesFailure.json in Resources */,
+				A8204F0523F3FFF20026BC2E /* ProximaNovaBold.otf in Resources */,
+				A83D8DC623F5204800D37009 /* LaunchScreen.storyboard in Resources */,
+				A885F5D723F3E4ED00B63CA8 /* Assets.xcassets in Resources */,
+				A8323FEB23FBB46100D3A865 /* DeliveriesSuccess.json in Resources */,
+				A8204F0323F3FFCD0026BC2E /* ProximaNovaRegular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A885F5DE23F3E4EE00B63CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8323FE723FBAE2900D3A865 /* DeliveriesFailure.json in Resources */,
+				A8FA6DDC23FBA72D00D00C66 /* DeliveriesSuccess.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		450AA83078E9E3012DE9DC4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eHatid/Pods-eHatid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eHatid/Pods-eHatid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eHatid/Pods-eHatid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5553455C585289D391227FC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eHatidTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CF04600A66624A860A6267 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eHatidTests/Pods-eHatidTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eHatidTests/Pods-eHatidTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eHatidTests/Pods-eHatidTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C16836DFDF0861B9CC3BE26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eHatid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B4FD6223F65AA90021994E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --config \"$SRCROOT/.swiftlint.yml\"\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A885F5C623F3E4EC00B63CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8FA6DD223FBA04900D00C66 /* TestAppDelegate.swift in Sources */,
+				A8B4FD6723F673B70021994E /* Delivery.swift in Sources */,
+				EF34A55023FA38A70019D7C9 /* DeliveryDetailsView.swift in Sources */,
+				A8B4FD7723F6A2280021994E /* ThemeManager.swift in Sources */,
+				EF3C92C623F8124F0089B7C8 /* UILabel+Extension.swift in Sources */,
+				A86A45CB23F541AE00FAFA78 /* Environment.swift in Sources */,
+				A8204EF423F3EFCE0026BC2E /* APIService.swift in Sources */,
+				A82BB0A423F6442400F68A7F /* CoreDataStack.swift in Sources */,
+				EFF05AE623F8DB1300393634 /* String+Extension.swift in Sources */,
+				A8204F1123F410730026BC2E /* DeliveryVC.swift in Sources */,
+				A8B4FD7923F6A24D0021994E /* UIColor+Extension.swift in Sources */,
+				A86A45C823F534BF00FAFA78 /* Configuration.swift in Sources */,
+				A885F5CE23F3E4EC00B63CA8 /* MainAppDelegate.swift in Sources */,
+				A8B4FD6923F675950021994E /* DeliveryRoute.swift in Sources */,
+				EF3C92C223F800D80089B7C8 /* Constants.swift in Sources */,
+				A8B4FD6B23F6764D0021994E /* DeliverySender.swift in Sources */,
+				A8E1FEAD23F6B1640097BAAF /* UIView+Extension.swift in Sources */,
+				A8323FE223FBAA4600D3A865 /* DataModel.xcdatamodeld in Sources */,
+				A8B4FD6D23F67A620021994E /* DeliveryViewModel.swift in Sources */,
+				A8B4FD7023F67B630021994E /* DeliveryRequest.swift in Sources */,
+				EF34A55223FA3F650019D7C9 /* DeliveryDetailsViewVC.swift in Sources */,
+				EF3C92C423F8045A0089B7C8 /* Globals.swift in Sources */,
+				A8204F1323F411CD0026BC2E /* RootRouter.swift in Sources */,
+				A8204F0723F4030E0026BC2E /* main.swift in Sources */,
+				A8E1FEAF23F6B5200097BAAF /* DeliveryCell.swift in Sources */,
+				EFF05AE823F8DF1800393634 /* NSDecimalNumber+Extension.swift in Sources */,
+				A8B4FD7E23F6AD570021994E /* DeliveryView.swift in Sources */,
+				A8B4FD7B23F6AAAC0021994E /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A885F5DC23F3E4EE00B63CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8323FEE23FBB5AC00D3A865 /* DeliveryVCTest.swift in Sources */,
+				A8FA6DD723FBA61700D00C66 /* FakeMoyaProvider.swift in Sources */,
+				A8FA6DD023FB9F2B00D00C66 /* DeliveryViewModelTest.swift in Sources */,
+				A8204F0E23F407250026BC2E /* TestAppDelegate.swift in Sources */,
+				A8FA6DD923FBA66C00D00C66 /* Mock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A885F5E223F3E4EE00B63CA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A885F5C923F3E4EC00B63CA8 /* eHatid */;
+			targetProxy = A885F5E123F3E4EE00B63CA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A82BB09D23F6437A00F68A7F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A82BB09C23F6437A00F68A7F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A82BB0A223F6439000F68A7F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A82BB0A123F6439000F68A7F /* fil-PH */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A83D8DC723F52C4700D37009 /* Staging Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Metropolitan Bank & Trust Company (Q3WC5AM6NA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = "Staging Debug";
+		};
+		A83D8DC823F52C4700D37009 /* Staging Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43092603646A43A9ADD332D /* Pods-eHatid.staging debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				APP_DISPLAY_NAME = "eHatid-STA";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatid/Primaries/MainInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iamjcabarra.com.eHatid-STA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG STA";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Staging Debug";
+		};
+		A83D8DC923F52C4700D37009 /* Staging Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E38CEF82E7CF9FCF424A04 /* Pods-eHatidTests.staging debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatidTests/Primaries/TestInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iamjcabarra.com.eHatidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = eHatidTests/Primaries/TestBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHatid.app/eHatid";
+			};
+			name = "Staging Debug";
+		};
+		A83D8DCA23F52C5300D37009 /* Staging Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Metropolitan Bank & Trust Company (Q3WC5AM6NA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Staging Release";
+		};
+		A83D8DCB23F52C5300D37009 /* Staging Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF23357EA6A00F6B931DAAA /* Pods-eHatid.staging release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				APP_DISPLAY_NAME = "eHatid-STA";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatid/Primaries/MainInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iamjcabarra.com.eHatid-STA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STA;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Staging Release";
+		};
+		A83D8DCC23F52C5300D37009 /* Staging Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B912821C1A53D319065B26F1 /* Pods-eHatidTests.staging release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatidTests/Primaries/TestInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iamjcabarra.com.eHatidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = eHatidTests/Primaries/TestBridgingHeader.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHatid.app/eHatid";
+			};
+			name = "Staging Release";
+		};
+		A83D8DCD23F52C6300D37009 /* Production Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Metropolitan Bank & Trust Company (Q3WC5AM6NA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = "Production Debug";
+		};
+		A83D8DCE23F52C6300D37009 /* Production Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B3A21967CFE8E3B4E2B176 /* Pods-eHatid.production debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				APP_DISPLAY_NAME = eHatid;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatid/Primaries/MainInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iamjcabarra.com.eHatid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG PRO";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Production Debug";
+		};
+		A83D8DCF23F52C6300D37009 /* Production Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43647E1362E4E27F30985C8E /* Pods-eHatidTests.production debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatidTests/Primaries/TestInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iamjcabarra.com.eHatidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = eHatidTests/Primaries/TestBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHatid.app/eHatid";
+			};
+			name = "Production Debug";
+		};
+		A83D8DD023F52C6D00D37009 /* Production Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Metropolitan Bank & Trust Company (Q3WC5AM6NA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Production Release";
+		};
+		A83D8DD123F52C6D00D37009 /* Production Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C70E9361A3EEEB92EF21F17 /* Pods-eHatid.production release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				APP_DISPLAY_NAME = eHatid;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatid/Primaries/MainInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iamjcabarra.com.eHatid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRO;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Production Release";
+		};
+		A83D8DD223F52C6D00D37009 /* Production Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE8821E8E57F5B933EFC382 /* Pods-eHatidTests.production release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatidTests/Primaries/TestInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iamjcabarra.com.eHatidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = eHatidTests/Primaries/TestBridgingHeader.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHatid.app/eHatid";
+			};
+			name = "Production Release";
+		};
+		A885F5E723F3E4EE00B63CA8 /* Development Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Metropolitan Bank & Trust Company (Q3WC5AM6NA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = "Development Debug";
+		};
+		A885F5E823F3E4EE00B63CA8 /* Development Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Metropolitan Bank & Trust Company (Q3WC5AM6NA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Development Release";
+		};
+		A885F5EA23F3E4EE00B63CA8 /* Development Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643C5A1BDF54E0A6FC9494D0 /* Pods-eHatid.development debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				APP_DISPLAY_NAME = "eHatid-DEV";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatid/Primaries/MainInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iamjcabarra.com.eHatid-DEV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEV";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Development Debug";
+		};
+		A885F5EB23F3E4EE00B63CA8 /* Development Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B363CC9B97BD1DA28BEC84DD /* Pods-eHatid.development release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				APP_DISPLAY_NAME = "eHatid-DEV";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatid/Primaries/MainInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iamjcabarra.com.eHatid-DEV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Development Release";
+		};
+		A885F5ED23F3E4EE00B63CA8 /* Development Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C928DEAB2CB9A0F35F8CAF /* Pods-eHatidTests.development debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatidTests/Primaries/TestInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iamjcabarra.com.eHatidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = eHatidTests/Primaries/TestBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHatid.app/eHatid";
+			};
+			name = "Development Debug";
+		};
+		A885F5EE23F3E4EE00B63CA8 /* Development Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F34027FB8C7076C7D4C7D07D /* Pods-eHatidTests.development release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BJU84J9K4;
+				INFOPLIST_FILE = eHatidTests/Primaries/TestInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iamjcabarra.com.eHatidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = eHatidTests/Primaries/TestBridgingHeader.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHatid.app/eHatid";
+			};
+			name = "Development Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A885F5C523F3E4EC00B63CA8 /* Build configuration list for PBXProject "eHatid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A885F5E723F3E4EE00B63CA8 /* Development Debug */,
+				A83D8DCD23F52C6300D37009 /* Production Debug */,
+				A83D8DC723F52C4700D37009 /* Staging Debug */,
+				A885F5E823F3E4EE00B63CA8 /* Development Release */,
+				A83D8DD023F52C6D00D37009 /* Production Release */,
+				A83D8DCA23F52C5300D37009 /* Staging Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development Release";
+		};
+		A885F5E923F3E4EE00B63CA8 /* Build configuration list for PBXNativeTarget "eHatid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A885F5EA23F3E4EE00B63CA8 /* Development Debug */,
+				A83D8DCE23F52C6300D37009 /* Production Debug */,
+				A83D8DC823F52C4700D37009 /* Staging Debug */,
+				A885F5EB23F3E4EE00B63CA8 /* Development Release */,
+				A83D8DD123F52C6D00D37009 /* Production Release */,
+				A83D8DCB23F52C5300D37009 /* Staging Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development Release";
+		};
+		A885F5EC23F3E4EE00B63CA8 /* Build configuration list for PBXNativeTarget "eHatidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A885F5ED23F3E4EE00B63CA8 /* Development Debug */,
+				A83D8DCF23F52C6300D37009 /* Production Debug */,
+				A83D8DC923F52C4700D37009 /* Staging Debug */,
+				A885F5EE23F3E4EE00B63CA8 /* Development Release */,
+				A83D8DD223F52C6D00D37009 /* Production Release */,
+				A83D8DCC23F52C5300D37009 /* Staging Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development Release";
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A8323FE023FBAA4600D3A865 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8323FE123FBAA4600D3A865 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = A8323FE123FBAA4600D3A865 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A885F5C223F3E4EC00B63CA8 /* Project object */;
+}

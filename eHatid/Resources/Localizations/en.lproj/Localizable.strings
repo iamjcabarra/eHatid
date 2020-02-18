@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  eHatid
+  ENGLISH
+
+  Created by Julius Abarra on 2/14/20.
+  Copyright © 2020 eXzeptional. All rights reserved.
+*/
+
+"Deliveries" = "Deliveries";
+"From" = "From";
+"To" = "To";
+"Sorry but there was an error processing your request." = "Sorry but there was an error processing your request.";
+"Delivery Fee" = "Delivery Fee";
+"Goods to deliver" = "Goods to deliver";
+"Delivery Details" = "Delivery Details";

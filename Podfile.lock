@@ -1,0 +1,84 @@
+PODS:
+  - Alamofire (4.9.0)
+  - KRActivityIndicatorView (3.0.3)
+  - KRProgressHUD (3.4.2):
+    - KRActivityIndicatorView (= 3.0.3)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - netfox (1.18.0)
+  - Nimble (8.0.2)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - PromiseKit (6.8.3):
+    - PromiseKit/CorePromise (= 6.8.3)
+    - PromiseKit/Foundation (= 6.8.3)
+    - PromiseKit/UIKit (= 6.8.3)
+  - PromiseKit/CorePromise (6.8.3)
+  - PromiseKit/Foundation (6.8.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.3):
+    - PromiseKit/CorePromise
+  - Quick (2.1.0)
+  - Result (4.1.0)
+  - SDWebImage (5.0.0):
+    - SDWebImage/Core (= 5.0.0)
+  - SDWebImage/Core (5.0.0)
+  - SnapKit (4.2.0)
+  - SwiftLint (0.39.1)
+  - XCGLogger (6.1.0):
+    - XCGLogger/Core (= 6.1.0)
+  - XCGLogger/Core (6.1.0):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - KRProgressHUD (= 3.4.2)
+  - Moya (= 13.0.1)
+  - netfox (= 1.18.0)
+  - Nimble (= 8.0.2)
+  - PromiseKit (= 6.8.3)
+  - Quick (= 2.1.0)
+  - SDWebImage (= 5.0)
+  - SnapKit (= 4.2.0)
+  - SwiftLint (= 0.39.1)
+  - XCGLogger (= 6.1.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - Moya
+    - netfox
+    - Nimble
+    - ObjcExceptionBridging
+    - PromiseKit
+    - Quick
+    - Result
+    - SDWebImage
+    - SnapKit
+    - SwiftLint
+    - XCGLogger
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  KRActivityIndicatorView: 3a870da60f321f5a88458658434749829865b401
+  KRProgressHUD: 1101587c29484dbeee6a3e661d2fc3b141d96a56
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  netfox: 95b3583c28e4a3376cc5a647d48e8e26f5b16d58
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
+  XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
+
+PODFILE CHECKSUM: e4a935864a7d9b9af31d1755650e377d52d6c260
+
+COCOAPODS: 1.8.4

@@ -2,7 +2,7 @@
 It is a simple application that allows user to: 1) see the list of his deliveries; 2) see the details of each of the deliveries; and, 3) favorite or unfavorite deliveries.
 
 ## Demo
-<img src="https://github.com/iamjcabarra/eHatid/blob/master/demo.gif" width="300" height="700" />
+<img src="https://github.com/iamjcabarra/eHatid/blob/master/demo.gif" width="300" height="600" />
 
 ## Features
 1. Pagination - load more deliveries when scrolling to the bottom of the list

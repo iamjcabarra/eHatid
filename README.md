@@ -10,7 +10,7 @@ It is a simple application that allows user to: 1) see the list of his deliverie
 eHatid was developed using Swift 4.2, iOS 11, and Xcode 11.2.1
 
 ## Network
-Developer utilized Moya and PromiseKit as third-party libraries to accomplish networking tasks.
+Developer utilized Moya and PromiseKit as third-party libraries to accomplish networking-related tasks.
 
 ## Database
 For local database, developer made use of CoreData, an object graph and persistence framework provided by Apple in the macOS and iOS operating systems.

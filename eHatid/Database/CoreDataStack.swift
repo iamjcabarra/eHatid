@@ -269,4 +269,25 @@ extension CoreDataStack {
         return nil
     }
     
+    /// Removes items from an entity.
+    ///
+    /// - parameters:
+    ///     - entity: A `String` identifying entity's name
+    ///     - filter: An `NSPredicate` identifying the filter
+    /// - returns: `true` if deletion succeeds; otherwise, `false`
+    @discardableResult
+    public func clearEntity(name entity: String, filteredBy predicate: NSPredicate?) -> Bool {
+        let fetchRequest: NSFetchRequest<NSManagedObject> = NSFetchRequest<NSManagedObject>(entityName: entity)
+        fetchRequest.predicate = predicate
+        
+        do {
+            let items = try self.workerContext.fetch(fetchRequest)
+            for mo in items { self.workerContext.delete(mo) }
+            return self.saveManagedObjectContext(self.workerContext)
+        } catch let error {
+            logger.error("Clearing items of entity \"\(entity)\" because: \(error)")
+            return false
+        }
+    }
+    
 }

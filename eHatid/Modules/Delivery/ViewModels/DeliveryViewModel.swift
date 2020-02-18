@@ -76,7 +76,7 @@ extension DeliveryViewModel {
             completion(false)
             return
         }
-    
+        
         context.performAndWait {
             var order: Int64 = self.getStartOrder()
             

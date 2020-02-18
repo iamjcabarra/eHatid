@@ -71,6 +71,12 @@ extension DeliveryVC {
     private func fetchDeliveries(isLoadMore: Bool) {
         isLoadMore ? self.hideTableFooterView(false) : KRProgressHUD.show()
         
+        if isLoadMore == false {
+            self.viewModel.database.clearEntity(name: Constants.Entity.delivery, filteredBy: nil)
+            self.viewModel.database.clearEntity(name: Constants.Entity.deliverySender, filteredBy: nil)
+            self.viewModel.database.clearEntity(name: Constants.Entity.deliveryRoute, filteredBy: nil)
+        }
+        
         self.viewModel.getDeliveries(offset: self.offset, limit: self.limit) { result in
             switch result {
             case .success(let isSuccess):
@@ -88,7 +94,8 @@ extension DeliveryVC {
                         "Sorry but there was an error processing your request.",
                         comment: ""
                     )
-                    isLoadMore ? self?.hideTableFooterView(true) : KRProgressHUD.showMessage(message)
+                    KRProgressHUD.showMessage(message)
+                    self?.hideTableFooterView(true)
                     logger.error("\(error)")
                 }
             }

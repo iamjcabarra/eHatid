@@ -1,6 +1,9 @@
 # eHatid
 It is a simple application that allows user to: 1) see the list of his deliveries; 2) see the details of each of the deliveries; and, 3) favorite or unfavorite deliveries.
 
+# Demo
+[![Watch the video](https://github.com/iamjcabarra/eHatid/blob/master/Demo.mov)](https://github.com/iamjcabarra/eHatid/blob/master/Demo.mov)
+
 ## Features
 1. Pagination - load more deliveries when scrolling to the bottom of the list
 2. Remember favorite - data are stored locally

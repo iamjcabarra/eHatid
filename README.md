@@ -1,33 +1,33 @@
 # eHatid
 It is a simple application that allows user to: 1) see the list of his deliveries; 2) see the details of each of the deliveries; and, 3) favorite or unfavorite deliveries.
 
-## Demo
+### Demo
 <img src="https://github.com/iamjcabarra/eHatid/blob/master/demo.gif" width="300" height="600" />
 
-## Features
+### Features
 1. Pagination - load more deliveries when scrolling to the bottom of the list
 2. Remember favorite - data are stored locally
 3. Customizable theme - can be built based on desired theme
 
-## Version
+### Version
 eHatid was developed using Swift 4.2, iOS 11, and Xcode 11.2.1.
 
-## Network
+### Network
 I utilized Moya and PromiseKit as third-party libraries to accomplish networking-related tasks.
 
-## Database
+### Database
 For local database, I made use of CoreData, an object graph and persistence framework provided by Apple in the macOS and iOS operating systems.
 
-## UI
+### UI
 I implemented UIs programmatically with the help of third-party library called SnapKit.
 
-## Testing
+### Testing
 I utilized Quick and Nimble in order for me to write tests that read exactly like regular sentences, allowing me to easily and swiftly describe the behavior I wish to verify.
 
-## Style
+### Style
 I used SwiftLint as a tool to enforce Swift style and conventions which is loosely based on GitHub's Swift Style Guide.
 
-## License
+### License
 
 The MIT License (MIT)
 

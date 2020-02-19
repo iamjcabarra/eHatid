@@ -10,19 +10,22 @@ It is a simple application that allows user to: 1) see the list of his deliverie
 3. Customizable theme - can be built based on desired theme
 
 ## Version
-eHatid was developed using Swift 4.2, iOS 11, and Xcode 11.2.1
+eHatid was developed using Swift 4.2, iOS 11, and Xcode 11.2.1.
 
 ## Network
-Developer utilized Moya and PromiseKit as third-party libraries to accomplish networking-related tasks.
+I utilized Moya and PromiseKit as third-party libraries to accomplish networking-related tasks.
 
 ## Database
-For local database, developer made use of CoreData, an object graph and persistence framework provided by Apple in the macOS and iOS operating systems.
+For local database, I made use of CoreData, an object graph and persistence framework provided by Apple in the macOS and iOS operating systems.
 
 ## UI
-Developer implemented UIs programmatically with the help of third-party library called SnapKit.
+I implemented UIs programmatically with the help of third-party library called SnapKit.
 
 ## Testing
-Developer utilized Quick and Nimble in order for him to write tests that read exactly like regular sentences, allowing him to easily and swiftly describe the behavior he wishes to verify.
+I utilized Quick and Nimble in order for me to write tests that read exactly like regular sentences, allowing me to easily and swiftly describe the behavior I wish to verify.
+
+## Style
+I used SwiftLint as a tool to enforce Swift style and conventions which is loosely based on GitHub's Swift Style Guide.
 
 ## License
 
